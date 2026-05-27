@@ -118,7 +118,20 @@ else:
         cap = cv2.VideoCapture(0)
 
         if not cap.isOpened():
-            st.error("❌ Cannot access webcam")
+
+            st.warning("""
+        ⚠ Webcam access is unavailable.
+
+        If using Streamlit Cloud:
+        - Cloud servers cannot access your local webcam.
+
+        Run locally using:
+
+        streamlit run dashboard/app.py
+
+        for real-time webcam monitoring.
+        """)
+
             st.stop()
 
         while True:
