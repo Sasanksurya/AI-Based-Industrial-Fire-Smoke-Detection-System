@@ -28,7 +28,7 @@ ALERT_COOLDOWN = 60
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ---------------- LOAD MODEL ----------------
-model = YOLO(MODEL_PATH)
+model = YOLO("yolov8n.pt")
 
 # ---------------- UI ----------------
 st.title("🔥 Industrial Fire & Smoke Detection Dashboard")
