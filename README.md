@@ -74,9 +74,7 @@ streamlit run dashboard/app.py
 
 ---
 
-# 📸 Screenshots
 
-(Add your project screenshots here)
 
 ---
 
